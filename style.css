@@ -10,3 +10,170 @@
 --main-color-darker: rgb(230, 230, 230);
 /* --text-color: rgb(188, 237, 9); */
 }
+
+body {
+  margin: 0;
+  color: var(--text-color);
+  background-color: var(--main-color);
+}
+
+.container {
+  display: grid;
+  grid-template-areas: 
+  "header"
+  "nav"
+  "main"
+  "aside"
+  "footer";
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 70% auto;
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "main aside"
+    "footer footer";
+  }
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: var(--background-color);
+  padding: 30px;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: 'Archivo Black', sans-serif;
+  flex-wrap: wrap;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+ul {
+  list-style: none;
+}
+
+footer {
+  background-color: var(--background-color);
+}
+
+.link {
+  color: var(--text-color);
+  transition: color 0.5s;
+}
+
+.link:hover {
+  color: var(--main-color);
+}
+
+.eventlink {
+  font-size: 1.2em;
+}
+
+.eventlink, .pluslink {
+  color: var(--text-color);
+  transition: color 0.5s;
+}
+
+.eventlink:hover, .pluslink:hover {
+  color: var(--background-color);
+}
+
+main {
+  grid-area: main;
+}
+
+article {
+  padding: 30px;
+}
+
+h1, h2, h3, p {
+text-align: center;
+}
+
+h1, h2 {
+  font-family: 'Archivo Black', sans-serif;
+}
+
+p, footer {
+  font-family: 'Proza Libre', sans-serif;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.img {
+  border-radius: 26px 26px 0 0;
+}
+
+.card {
+  width: 250px;
+  box-shadow: 10px 8px 5px var(--background-color);
+  border: 2px solid var(--text-color);
+  border-radius: 30px;
+  margin: 20px;
+  transition: opacity 0.5s;
+}
+
+h3 {
+  background-color: var(--background-color);
+}
+
+aside {
+  grid-area: aside;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-color-darker);
+  border: 2px solid var(--text-color);
+  border-radius: 30px;
+  margin: 20px;
+}
+
+.full {
+  max-width: 100%;
+  padding: 20px;
+  border-radius: 50px 0 50px 0;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 40% 40% auto;
+  align-items: center;
+  grid-area: footer;
+  text-align: justify;
+  flex-wrap: wrap;
+}
+
+h4 {
+  position: relative;
+  left: 40px;
+}
+
+.bold-underlined {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
