@@ -148,7 +148,7 @@ aside {
   background-color: var(--main-color-darker);
   border: 2px solid var(--text-color);
   border-radius: 30px;
-  margin: 20px;
+  margin: 20px 30px 50px;
 }
 
 .full {
@@ -175,5 +175,4 @@ h4 {
   font-weight: bold;
   text-decoration: underline;
 }
-
 
