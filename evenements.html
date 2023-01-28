@@ -24,22 +24,58 @@
       </ul>
     </nav>
     <aside>
+      <p>Inscrivez-vous à notre newsletter pour ne rien rater de nos prochains évènements</p>
+      <form action="inscription.php" method="post">
+        <fieldset>
+          <legend>Vos informations</legend>
+        <div>
+            <input type="radio" id="Mr" name="civilite" value="Mr">
+            <label for="Mr" class="inline-label">Monsieur</label>
+        </div>
+        <div>
+            <input type="radio" id="Mme" name="civilite" value="Mme">
+            <label for="Mme" class="inline-label">Madame</label>
+        </div>
+        <div>
+          <label for="firstName">Prénom</label>
+          <input type="text" name="firstName" id="firstName" required placeholder="Votre prénom">
+        </div>
+        <div>
+          <label for="lastName">Nom</label>
+          <input type="text" name="lastName" id="lastName" required placeholder="Votre nom">
+        </div>
+        <div>
+          <label for="email">E-mail</label>
+          <input type="mail" name="email" id="email" placeholder="Votre adresse e-mail">
+        </div>
 
+        <button type="submit">Je souhaite m'inscrire</button>
+        </fieldset>
+      </form>
     </aside>
     <main>
       <section>
+        <h1 class="event">Évènements à venir</h1>
         <article>
           <div class="weekend">
-            <h1>Week-end d'adoption et de collecte alimentaire</h1>
-            <h2><i class="fa-solid fa-calendar-days"></i> Du 03/02/2023 au 05/02/2023</h2>
+            <h2>Week-end d'adoption et de collecte alimentaire</h2>
+            <h3><i class="fa-solid fa-calendar-days"></i>Du 03/02/2023 au 05/02/2023</h3>
             <p>On vous attend nombreux!</p>
           </div>
           <div class="tombola">
-            <h1>Tombola des animaux heureux</h1>
-            <h2><i class="fa-solid fa-calendar-days"></i> Du 11/02/2023 au 12/02/2023</h2>
+            <h2>Tombola des animaux heureux</h2>
+            <h3><i class="fa-solid fa-calendar-days"></i>Du 11/02/2023 au 12/02/2023</h3>
             <p>Nous organisons une tombola le 11 et 12 février</p>
             <p>De nombreux lots seront à gagner!</p>
             <p>Contactez-nous pour savoir comment obtenir votre ticket!</p>
+          </div>
+          <div class="cross">
+            <h2>Cani-cross</h2>
+            <h3><i class="fa-solid fa-calendar-days"></i>Le 19/02/2023</h3>
+            <p>A vos pattes, prêts, partez!</p>
+            <p>En partenariat avec l'association de Canicross Ready Steady Bark</p>
+            <p>Les bénéfices de cette course sera reversée au refuge pour nos petits habitants</p>
+            <p>Inscription par mail uniquement bandp@bp.com</p>
           </div>
         </article>
       </section>
