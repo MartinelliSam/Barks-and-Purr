@@ -4,10 +4,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap');
 
 :root {
---background-color: rgb(187, 133, 130);
---text-color: rgb(253, 201, 13);
---main-color: rgb(235, 235, 235);
---main-color-darker: rgb(230, 230, 230);
+  --background-color: rgb(253, 201, 13); 
+  --text-color: rgb(87, 66, 32);
+  --main-color: rgb(235, 235, 235);
+  --main-color-darker: rgb(230, 230, 230);
 }
 
 body {
